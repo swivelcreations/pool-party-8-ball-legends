@@ -1,24 +1,165 @@
-nloadHealth":"","updateProgress":-1.0,"downloadBytesPerSecondLimit":0,"downloadSize":0,"buildSize":0,"memoryChunksInStore":0,"memoryChunksBooted":0,"downloadByteSpeed":0.0,"diskReadByteSpeed":0.0,"diskWriteByteSpeed":0.0,"downloadedBytes":0,"diskReadBytes":0,"diskWrittenBytes":0},"bpsEndStats":{"totalDownloadedData":0,"totalReadData":0,"totalWrittenData":0,"averageDownloadSpeed":0.0,"averageDiskReadSpeed":0.0,"averageDiskWriteSpeed":0.0,"peakDownloadSpeed":0.0,"peakDiskReadSpeed":0.0,"peakDiskWriteSpeed":0.0,"finalDownloadSpeed":0.0,"initializeTime":0.0,"constructTime":0.0,"moveFromStageTime":0.0,"fileAttributesTime":0.0,"verifyTime":0.0,"cleanUpTime":0.0,"prereqTime":0.0,"uninstallActionTime":0.0,"processPausedTime":0.0,"processActiveTime":0.0,"processExecuteTime":0.0,"numInstallRetries":0,"numFailedDownloads":0,"numBadDownloads":0,"numAbortedDownloads":0,"numChunksDownloaded":0,"numFilesConstructed":0,"chunksQueuedForDownload":0,"activeRequestCountAvg":0,"activeRequestCountPeak":0,"processRequiredDiskSpace":0,"processAvailableDiskSpace":0,"memoryStoreSizePeakBytes":0,"memoryStoreSizeLimitBytes":0,"finalProgress":0.0,"processSuccess":false,"experimentName":"","experimentVariantName":"","failureType":"","errorCode":"","retryFailureTypes":[],"retryErrorCodes":[],"verifyErrorCounts":[]}}}
-// Upgrade NOTE: excluded shader from DX11, OpenGL ES 2.0 because it uses unsized arrays
-#pragma exclude_renderers d3d11 gles
-[2026.06.26-11.51.56:952] Task.cpp(292): "Login" Progress: attempt 0, dl 0/0, ul 0/0
-[2026.06.26-11.51.57:752] Task.cpp(886): Logged in as client
-[2026.06.26-11.51.57:757] Task.cpp(953): Read local manifest from C:\Program Files (x86)\Epic Games\Epic Online Services\managedArtifacts\4a0e9aa62e2341be9911ad38e0392a1d\.egstore\support.manifest
-[2026.06.26-11.51.57:759] Msg.cpp(70): Sent message: {"type":"progress","body":{"installTaskStep":"BuildInfo","actionsBuildInfo":[],"bpsConfigInfo":{"cloudDirs":[]},"bpsOngoingStats":{"state":"","downloadHealth":"","updateProgress":-1.0,"downloadBytesPerSecondLimit":0,"downloadSize":0,"buildSize":0,"memoryChunksInStore":0,"memoryChunksBooted":0,"downloadByteSpeed":0.0,"diskReadByteSpeed":0.0,"diskWriteByteSpeed":0.0,"downloadedBytes":0,"diskReadBytes":0,"diskWrittenBytes":0},"bpsEndStats":{"totalDownloadedData":0,"totalReadData":0,"totalWrittenData":0,"averageDownloadSpeed":0.0,"averageDiskReadSpeed":0.0,"averageDiskWriteSpeed":0.0,"peakDownloadSpeed":0.0,"peakDiskReadSpeed":0.0,"peakDiskWriteSpeed":0.0,"finalDownloadSpeed":0.0,"initializeTime":0.0,"constructTime":0.0,"moveFromStageTime":0.0,"fileAttributesTime":0.0,"verifyTime":0.0,"cleanUpTime":0.0,"prereqTime":0.0,"uninstallActionTime":0.0,"processPausedTime":0.0,"processActiveTime":0.0,"processExecuteTime":0.0,"numInstallRetries":0,"numFailedDownloads":0,"numBadDownloads":0,"numAbortedDownloads":0,"numChunksDownloaded":0,"numFilesConstructed":0,"chunksQueuedForDownload":0,"activeRequestCountAvg":0,"activeRequestCountPeak":0,"processRequiredDiskSpace":0,"processAvailableDiskSpace":0,"memoryStoreSizePeakBytes":0,"memoryStoreSizeLimitBytes":0,"finalProgress":0.0,"processSuccess":false,"experimentName":"","experimentVariantName":"","failureType":"","errorCode":"","retryFailureTypes":[],"retryErrorCodes":[],"verifyErrorCounts":[]}}}
-[2026.06.26-11.51.57:759] Task.cpp(292): "BuildInfo" Progress: attempt 0, dl 0/0, ul 0/0
-[2026.06.26-11.51.58:398] Task.cpp(1113): Received build info:
-[2026.06.26-11.51.58:398] Task.cpp(1114):   BinaryVersion:        1.2.9+++EOSH+Support
-[2026.06.26-11.51.58:398] Task.cpp(1115):   UseSignedUri:         false
-[2026.06.26-11.51.58:398] Task.cpp(1116):   HasDependencyConfig:  false
-[2026.06.26-11.51.58:398] Task.cpp(1117):   ManifestHash:         ec4cc67a7d94f90239eed2a87a6a42e42968cafe
-[2026.06.26-11.51.58:398] Task.cpp(1118):   3 URIs:
-[2026.06.26-11.51.58:398] Task.cpp(1121):     https://egdownload.fastly-edge.com/Builds/Org/o-aa83a0a9bc45e98c80c1b1c9d92e9e/38c843af4ea442bc9ec27a1b31aec903/default/7vv3Dle_SK9sBVF9ckG_mvd6kfPGyA.manifest?f_token=1782475018_5e8038902d19b1d78578303a120707c7ccb48699
-[2026.06.26-11.51.58:398] Task.cpp(1121):     https://epicgames-download1.akamaized.net/Builds/Org/o-aa83a0a9bc45e98c80c1b1c9d92e9e/38c843af4ea442bc9ec27a1b31aec903/default/7vv3Dle_SK9sBVF9ckG_mvd6kfPGyA.manifest?ak_token=exp=1782475018~hmac=63410d8d824c1f11ac0b48a9ba85628f6dcd605506e2dbaba4998cfe69468f1a
-[2026.06.26-11.51.58:398] Task.cpp(1121):     https://egs-cloudfront-chunks.epicgamescdn.com/Builds/Org/o-aa83a0a9bc45e98c80c1b1c9d92e9e/38c843af4ea442bc9ec27a1b31aec903/default/7vv3Dle_SK9sBVF9ckG_mvd6kfPGyA.manifest?cf_token=1782475018_52928fc51216294a45b9be67812136f255e5d8b8
-[2026.06.26-11.51.58:400] Task.cpp(953): Read local manifest from C:\ProgramData\Epic\EpicOnlineServices\InstallHelper\InstalledItems\ManifestCache\ec4cc67a7d94f90239eed2a87a6a42e42968cafe.manifest
-[2026.06.26-11.51.58:400] Task.cpp(1486): Copied manifest file from C:\ProgramData\Epic\EpicOnlineServices\InstallHelper\InstalledItems\ManifestCache\ec4cc67a7d94f90239eed2a87a6a42e42968cafe.manifest to C:\Program Files (x86)\Epic Games\Epic Online Services\managedArtifacts\4a0e9aa62e2341be9911ad38e0392a1d\.egstore\support.manifest.pending
-[2026.06.26-11.51.58:400] Task.cpp(1597): Writing .egi files with pending statuses (Installing/Updating/Repairing/Uninstalling)
-[2026.06.26-11.51.58:401] Installation.cpp(232): Writing revision 08DE90C963030BEB00000000000004CE
-[2026.06.26-11.51.58:403] Installation.cpp(196): Wrote C:\ProgramData\Epic\EpicOnlineServices\InstallHelper\InstalledItems\support.egi
-[2026.06.26-11.51.58:403] Msg.cpp(70): Sent message: {"type":"revision","body":{"revision":"08DE90C963030BEB00000000000004CE"}}
-[2026.06.26-11.51.58:403] Task.cpp(1
+﻿struct vertex_t
+{
+    UNITY_VERTEX_INPUT_INSTANCE_ID
+    float4	position		: POSITION;
+    float3	normal			: NORMAL;
+    float4	color			: COLOR;
+    float4	texcoord0		: TEXCOORD0;
+    float2	texcoord1		: TEXCOORD1;
+};
+
+struct pixel_t
+{
+    UNITY_VERTEX_INPUT_INSTANCE_ID
+    UNITY_VERTEX_OUTPUT_STEREO
+    float4	position		: SV_POSITION;
+    float4	faceColor		: COLOR;
+    float4	outlineColor	: COLOR1;
+    float4	texcoord0		: TEXCOORD0;
+    float4	param			: TEXCOORD1;		// x = weight, y = no longer used
+    float2	mask			: TEXCOORD2;
+    #if (UNDERLAY_ON || UNDERLAY_INNER)
+    float4	texcoord2		: TEXCOORD3;
+    float4	underlayColor	: COLOR2;
+    #endif
+};
+
+float4 SRGBToLinear(float4 rgba)
+{
+    return float4(lerp(rgba.rgb / 12.92f, pow((rgba.rgb + 0.055f) / 1.055f, 2.4f), step(0.04045f, rgba.rgb)), rgba.a);
+}
+
+float _UIMaskSoftnessX;
+float _UIMaskSoftnessY;
+
+pixel_t VertShader(vertex_t input)
+{
+    pixel_t output;
+
+    UNITY_INITIALIZE_OUTPUT(pixel_t, output);
+    UNITY_SETUP_INSTANCE_ID(input);
+    UNITY_TRANSFER_INSTANCE_ID(input, output);
+    UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(output);
+
+    float bold = step(input.texcoord0.w, 0);
+
+    float4 vert = input.position;
+    vert.x += _VertexOffsetX;
+    vert.y += _VertexOffsetY;
+
+    float4 vPosition = UnityObjectToClipPos(vert);
+
+    float weight = lerp(_WeightNormal, _WeightBold, bold) / 4.0;
+    weight = (weight + _FaceDilate) * _ScaleRatioA * 0.5;
+
+    // Generate UV for the Masking Texture
+    float4 clampedRect = clamp(_ClipRect, -2e10, 2e10);
+    float2 maskUV = (vert.xy - clampedRect.xy) / (clampedRect.zw - clampedRect.xy);
+
+    float4 color = input.color;
+    #if (FORCE_LINEAR && !UNITY_COLORSPACE_GAMMA)
+    color = SRGBToLinear(input.color);
+    #endif
+
+    float opacity = color.a;
+    #if (UNDERLAY_ON | UNDERLAY_INNER)
+    opacity = 1.0;
+    #endif
+
+    float4 faceColor = float4(color.rgb, opacity) * _FaceColor;
+    faceColor.rgb *= faceColor.a;
+
+    float4 outlineColor = _OutlineColor;
+    outlineColor.a *= opacity;
+    outlineColor.rgb *= outlineColor.a;
+
+    output.position = vPosition;
+    output.faceColor = faceColor;
+    output.outlineColor = outlineColor;
+    output.texcoord0 = float4(input.texcoord0.xy, maskUV.xy);
+    output.param = float4(0.5 - weight, 0, _OutlineWidth * _ScaleRatioA * 0.5, 0);
+
+    float2 mask = float2(0, 0);
+    #if UNITY_UI_CLIP_RECT
+    mask = vert.xy * 2 - clampedRect.xy - clampedRect.zw;
+    #endif
+    output.mask = mask;
+
+    #if (UNDERLAY_ON || UNDERLAY_INNER)
+    float4 underlayColor = _UnderlayColor;
+    underlayColor.rgb *= underlayColor.a;
+
+    float x = -(_UnderlayOffsetX * _ScaleRatioC) * _GradientScale / _TextureWidth;
+    float y = -(_UnderlayOffsetY * _ScaleRatioC) * _GradientScale / _TextureHeight;
+
+    output.texcoord2 = float4(input.texcoord0 + float2(x, y), input.color.a, 0);
+    output.underlayColor = underlayColor;
+    #endif
+
+    return output;
+}
+
+float4 PixShader(pixel_t input) : SV_Target
+{
+    UNITY_SETUP_INSTANCE_ID(input);
+
+    float d = tex2D(_MainTex, input.texcoord0.xy).a;
+
+    float pixelSize = abs(ddx(input.texcoord0.y)) + abs(ddy(input.texcoord0.y));
+    pixelSize *= _TextureHeight * 0.75;
+    float scale = 1 / pixelSize * _GradientScale * (_Sharpness + 1);
+
+    #if (UNDERLAY_ON | UNDERLAY_INNER)
+    float layerScale = scale;
+    layerScale /= 1 + ((_UnderlaySoftness * _ScaleRatioC) * layerScale);
+    float layerBias = input.param.x * layerScale - .5 - ((_UnderlayDilate * _ScaleRatioC) * .5 * layerScale);
+    #endif
+
+    scale /= 1 + (_OutlineSoftness * _ScaleRatioA * scale);
+
+    float4 faceColor = input.faceColor * saturate((d - input.param.x) * scale + 0.5);
+
+    #if OUTLINE_ON
+    float4 outlineColor = lerp(input.faceColor, input.outlineColor, sqrt(min(1.0, input.param.z * scale * 2)));
+    faceColor = lerp(outlineColor, input.faceColor, saturate((d - input.param.x - input.param.z) * scale + 0.5));
+    faceColor *= saturate((d - input.param.x + input.param.z) * scale + 0.5);
+    #endif
+
+    #if UNDERLAY_ON
+    d = tex2D(_MainTex, input.texcoord2.xy).a * layerScale;
+    faceColor += float4(_UnderlayColor.rgb * _UnderlayColor.a, _UnderlayColor.a) * saturate(d - layerBias) * (1 - faceColor.a);
+    #endif
+
+    #if UNDERLAY_INNER
+    float bias = input.param.x * scale - 0.5;
+    float sd = saturate(d * scale - bias - input.param.z);
+    d = tex2D(_MainTex, input.texcoord2.xy).a * layerScale;
+    faceColor += float4(_UnderlayColor.rgb * _UnderlayColor.a, _UnderlayColor.a) * (1 - saturate(d - layerBias)) * sd * (1 - faceColor.a);
+    #endif
+
+    #if MASKING
+    float a = abs(_MaskInverse - tex2D(_MaskTex, input.texcoord0.zw).a);
+    float t = a + (1 - _MaskWipeControl) * _MaskEdgeSoftness - _MaskWipeControl;
+    a = saturate(t / _MaskEdgeSoftness);
+    faceColor.rgb = lerp(_MaskEdgeColor.rgb * faceColor.a, faceColor.rgb, a);
+    faceColor *= a;
+    #endif
+
+    // Alternative implementation to UnityGet2DClipping with support for softness
+    #if UNITY_UI_CLIP_RECT
+    half2 maskSoftness = half2(max(_UIMaskSoftnessX, _MaskSoftnessX), max(_UIMaskSoftnessY, _MaskSoftnessY));
+    float2 maskZW = 0.25 / (0.25 * maskSoftness + 1 / scale);
+    float2 m = saturate((_ClipRect.zw - _ClipRect.xy - abs(input.mask.xy)) * maskZW);
+    faceColor *= m.x * m.y;
+    #endif
+
+    #if (UNDERLAY_ON | UNDERLAY_INNER)
+    faceColor *= input.texcoord2.z;
+    #endif
+
+    #if UNITY_UI_ALPHACLIP
+    clip(faceColor.a - 0.001);
+    #endif
+
+    return faceColor;
+}
