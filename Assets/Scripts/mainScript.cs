@@ -5912,7 +5912,7 @@ public class mainScript : MonoBehaviour
 
 	private void settingsInit()
 	{
-		changeTableTexture();
+		//changeTableTexture();
 		changeTablePattern();
 		settingsGuideImg.sprite = guideSelectionTex[(int)guideType];
 		settingsGuideText.text = guideNames[(int)guideType];
@@ -5975,24 +5975,24 @@ public class mainScript : MonoBehaviour
 		{
 			selectedTable = 0;
 		}
-		changeTableTexture();
+		//changeTableTexture();
 	}
 
-	private void changeTableTexture()
-	{
-		settingsTableText.text = tableNames[selectedTable];
-		if (selectedTable < 3)
-		{
-			tableTexture = Resources.Load("TableTextures/" + selectedTable) as Texture;
-			tableTopBoardRenderer.sharedMaterial.mainTexture = tableTexture;
-		}
-		else
-		{
-			tableTexture = Resources.Load("TableTextures/" + 3) as Texture;
-			tableTopBoardRenderer.sharedMaterial.mainTexture = tableTexture;
-		}
-		tableTopBoardRenderer.sharedMaterial.color = tableColorArray[selectedTable];
-	}
+	// private void changeTableTexture()
+	// {
+	// 	settingsTableText.text = tableNames[selectedTable];
+	// 	if (selectedTable < 3)
+	// 	{
+	// 		tableTexture = Resources.Load("TableTextures/" + selectedTable) as Texture;
+	// 		tableTopBoardRenderer.sharedMaterial.mainTexture = tableTexture;
+	// 	}
+	// 	else
+	// 	{
+	// 		tableTexture = Resources.Load("TableTextures/" + 3) as Texture;
+	// 		tableTopBoardRenderer.sharedMaterial.mainTexture = tableTexture;
+	// 	}
+	// 	tableTopBoardRenderer.sharedMaterial.color = tableColorArray[selectedTable];
+	// }
 
 	public void onClickPatternSelection()
 	{
