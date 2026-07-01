@@ -8,7 +8,7 @@ public class NPCAnimator : MonoBehaviour
 
     private void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        //agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
     }
 

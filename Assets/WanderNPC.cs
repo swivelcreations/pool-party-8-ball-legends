@@ -1,59 +1,90 @@
 using UnityEngine;
-using UnityEngine.AI;
 
 public class WanderNPC : MonoBehaviour
 {
+    [Header("Waypoints")]
+    public Transform[] waypoints;
+
     [Header("Movement")]
-    public float wanderRadius = 20f;
+    public float moveSpeed = 2f;
+    public float rotationSpeed = 5f;
+    public float stoppingDistance = 0.5f;
     public float minWaitTime = 2f;
     public float maxWaitTime = 5f;
 
-    private NavMeshAgent agent;
+    private Transform currentTarget;
     private float waitTimer;
     private bool waiting;
 
+    private Animator anim;
+
     private void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        anim = GetComponent<Animator>();
+
+        if (anim != null)
+            anim.SetFloat("Speed", 1f);
+
         SetNewDestination();
     }
 
     private void Update()
     {
+        if (currentTarget == null)
+            return;
+
         if (waiting)
         {
+            if (anim != null)
+                anim.SetFloat("Speed", 0f);
+
             waitTimer -= Time.deltaTime;
 
             if (waitTimer <= 0)
             {
                 waiting = false;
+
+                if (anim != null)
+                    anim.SetFloat("Speed", 1f);
+
                 SetNewDestination();
             }
+
+            return;
         }
-        else
+
+        Vector3 direction = currentTarget.position - transform.position;
+        direction.y = 0;
+
+        if (direction.magnitude <= stoppingDistance)
         {
-            if (!agent.pathPending &&
-                agent.remainingDistance <= agent.stoppingDistance)
-            {
-                waiting = true;
-                waitTimer = Random.Range(minWaitTime, maxWaitTime);
-            }
+            waiting = true;
+            waitTimer = Random.Range(minWaitTime, maxWaitTime);
+            return;
         }
+
+        Quaternion targetRotation = Quaternion.LookRotation(direction);
+        transform.rotation = Quaternion.Slerp(
+            transform.rotation,
+            targetRotation,
+            rotationSpeed * Time.deltaTime);
+
+        transform.position += transform.forward * moveSpeed * Time.deltaTime;
     }
 
     private void SetNewDestination()
     {
-        Vector3 randomDirection = Random.insideUnitSphere * wanderRadius;
-        randomDirection += transform.position;
+        if (waypoints.Length == 0)
+            return;
 
-        NavMeshHit hit;
+        Transform nextTarget;
 
-        if (NavMesh.SamplePosition(randomDirection,
-                                   out hit,
-                                   wanderRadius,
-                                   NavMesh.AllAreas))
+        do
         {
-            agent.SetDestination(hit.position);
+            nextTarget = waypoints[Random.Range(0, waypoints.Length)];
         }
+        while (nextTarget == currentTarget && waypoints.Length > 1);
+
+        currentTarget = nextTarget;
     }
 }
